@@ -12,8 +12,8 @@ export default class Project extends React.Component {
             <a target="_blank" href={project.deployed ? project.deployed : project.github}>{project.title}</a>
           </h2>
           <div>
-            {project.github && <a href={project.github}><Glyph icon='mark-github' type='muted'/></a>}<span> </span>
-            {project.deployed && <a href={project.deployed}><Glyph icon='device-desktop' type='muted'/></a>}
+            {project.github && <a target="_blank" href={project.github}><Glyph icon='mark-github' type='muted'/></a>}<span> </span>
+            {project.deployed && <a target="_blank" href={project.deployed}><Glyph icon='device-desktop' type='muted'/></a>}
           </div>
           <div>
             {project.img &&  <a target="_blank" href={project.deployed ? project.deployed : project.github}><img src={project.img} /></a>}
